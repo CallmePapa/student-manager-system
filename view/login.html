@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="../style/login.css">
+    <script src="../framework/jquery-2.1.4/jquery.min.js"></script>
+    <script src="../js/db.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+<body>
+<div class="login-form">
+    <div class="top-login">
+        <span><img src="http://www.17sucai.com/preview/735710/2017-05-09/html4/images/group.png" alt=""/></span>
+    </div>
+    <h1>Welcome student manger</h1>
+    <div class="login-top">
+        <form id="userAdd">
+            <div class="login-ic">
+                <input type="text"  value="用户" name='name' onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'User name';}"/>
+                <div class="clear"> </div>
+            </div>
+            <div class="login-ic">
+                <input type="password"  value="密码" name="password" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'password';}"/>
+                <div class="clear"> </div>
+            </div>
+            <div class="log-bwn">
+                <input type="button"  value="Login" onclick="javascript:location.href='listUser.html'"/>
+            </div>
+        </form>
+    </div>
+    <p class="copy">@2017 weiqiujuan</p>
+</div>
+
+</body>
+</html>

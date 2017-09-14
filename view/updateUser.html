@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息更新管理</title>
+    <link rel="stylesheet" href="../style/update.css">
+    <script src="../framework/jquery-2.1.4/jquery.min.js"></script>
+    <script src="../js/db.js"></script>
+    <script src="../js/addStudent.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/updateUser.js"></script>
+    <link rel="stylesheet" href="../style/lists.css">
+    <script src="../js/list2.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="BG">
+        <div class="list"><a href="listUser.html">主页</a></div>
+        <div class="list">添加</div>
+        <div class="list"><a href="updateUser.html">修改</a></div>
+        <div class="list"><a href="login.html">登录</a></div>
+        <div id="active"></div>
+    </div>
+</div>
+<div class="body">
+    <h1>学生信息修改</h1>
+    <article>
+        <section>
+            <form action="javascript:void(0)" id="updateForm">
+                <table class="tb2">
+                    <tbody>
+                    <tr>
+                        <td>姓名</td>
+                        <td><input name="name" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>性别</td>
+                        <td>
+                            <select name="gender" class="sex">
+                                <option>男</option>
+                                <option>女</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>年龄</td>
+                        <td><input name="age" type="number" min="1" max="30"></td>
+                    </tr>
+                    <tr>
+                        <td>地址</td>
+                        <td><input name="address" type="text"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="two">
+                    <input type="submit" value="修改" class="one">
+                    <button><a href="../view/listUser.html">取消</a></button>
+                </div>
+            </form>
+        </section>
+    </article>
+</div>
+</body>
+</html>

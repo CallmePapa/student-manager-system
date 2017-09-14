@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生信息列表</title>
+    <link rel="stylesheet" href="../style/list.css">
+    <link rel="stylesheet" href="../style/lists.css">
+    <script src="../framework/jquery-2.1.4/jquery.min.js"></script>
+    <script src="../js/db.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/list.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="BG">
+        <div class="list"><a href="listUser.html">主页</a></div>
+        <div class="list"><a href="addStudent.html"></a>添加</div>
+        <div class="list"><a href="updateUser.html">修改</a></div>
+        <div class="list"><a href="login.html">登录</a></div>
+        <div id="active"></div>
+    </div>
+</div>
+<div class="body">
+<header>
+    <h1>学生信息管理</h1>
+</header>
+<article>
+    <section class="head">
+        <input type="search" class="souSuo"> <button class="txt">搜索</button>
+    </section>
+    <section>
+        <table class="tb1">
+            <thead>
+            <tr>
+                <th>选择</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+                <th>地址</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="hiddenTr">
+                <td><input type="checkbox"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="foot">
+        <input type="checkbox" value="全选">
+        <button><a href="../view/addStudent.html">添加</a></button>
+        <button>修改</button>
+        <button>删除</button>
+    </section>
+</article>
+</div>
+</body>
+</html>

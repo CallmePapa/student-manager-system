@@ -1,0 +1,47 @@
+
+.container{
+    left: 50%;
+    margin-top: 100px;
+    float: left;
+    cursor:pointer;
+    position: relative;
+}
+.BG{
+    right: 50%;
+    font-size: 0;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    position: relative;
+}
+.container div{
+    font-size: 16px;
+    line-height: 60px;
+}
+.list{
+    float: left;
+    display: inline-block;
+    padding: 0 50px;
+    transition: color 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+/*这里的listH和listA顺序不能换，有优先级，当listA被使用时listH不起作用*/
+.listH{
+    color:#2ce4ff;
+}
+.listA{
+    color: #fff;
+}
+
+/*滑块*/
+#active{
+    width: 100px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #23f5ff;
+    box-shadow: 0 5px 16px 0 rgba(200, 901, 560, 58);
+    position: relative;
+    z-index: 0;
+    transition: left 0.5s,width 1s;
+}
